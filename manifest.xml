@@ -127,16 +127,6 @@
         <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.memtrack</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMemtrack</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IMemtrack/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <version>1.2</version>
@@ -184,16 +174,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.1::IRadioConfig/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.renderscript</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
@@ -251,6 +231,13 @@
         </interface>
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
         <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.lineage.health</name>
+        <interface>
+            <name>IChargingControl</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.apmonitor</name>
